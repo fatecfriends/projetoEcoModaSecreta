@@ -3,118 +3,585 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FATEC Rubens Lara - Sistemas para Internet</title>
+    <title>EcoModa Secreta | Brechó com Curadoria</title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-        /*ATIVIDADE DE CSS 
-        Disciplina: PPSI I
-        Professor: Alexandre Sobrino
-        Aluno: Matheus Henrique de Souza Santos
-        */
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        body{
-            font-family: Helvetica, Verdana, sans-serif;
-            font-size: 17px;
-        }
-
-        h1{
-            font-size: 20px;
-            color: white;
-            background-color: #B20000;
-            padding: 20px;
-        }
-
-        h2{
-            color:#273336;
-            font-size: 20px;
-        }
-
-        a{
-            color: #B20000;
-            font-weight: bold;
-        }
-
-        strong{
-            font-weight: normal;
-        }
-
-        table {
-            width: 200px;
-            border-collapse:separate;
-        }
-
-        td {
-            text-align: center;
-            border: 1px solid black;
-            border-color: #B20000;                      
-            color: black;
-        }
-
-        th {
-            background-color: #B20000;
-            color: white;
-            border: 1px solid black;
-            border-color: #B20000;
-        }
-
-        .corLinha{
-            background-color: #B20000;
-            color: white;
-            font-weight: bold;
-        }          
-    </style>    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+<body>
+    <div class="top-bar">
 
-<body>  
-    <a href="http://vestibular.fatec.sp.gov.br" target="_blank">
-    <img src="/img/logo-fatecrl.png" alt="Logotipo da FATEC Baixada Santista Rubens Lara">
-    </a>
+        <div class="top-bar-content">
 
-    <h1>FATEC/RL - Sistemas para Internet</h1>
+            <span>
+                <i class="bi bi-stars"></i>
+                Peças únicas, histórias reais.
+            </span>
 
-    <h2>Perfil do profissional</h2>
+            <span>
+                <i class="bi bi-heart"></i>
+                Brechó com curadoria
+            </span>
 
-    <p>O <strong>Tecnólogo em Sistemas para Internet</strong> ocupa-se do desenvolvimento de programas, de interfaces e aplicativos, do comércio e do marketing eletrônicos, além de sítios e portais para internet e intranet. Este profissional gerencia projetos de sistemas, inclusive com acesso a banco de dados, desenvolvendo projetos de aplicações para a rede mundial de computadores e integra mídias nos sítios da internet. Atua com tecnologias emergentes como computação móvel, redes sem fio e sistemas distribuídos e cuida da implantação, atualização, manutenção e segurança dos sistemas para internet.</p>
+            <span>
+                <i class="bi bi-heart"></i>
+                Novidades toda semana
+            </span>
 
-    <h2>Vagas do curso por período</h2>
-    
-    <table>
-    <thead>
-        <tr>
-            <th>PERÍODOS</th>
-            <th>VAGAS</th>
-        </tr>
-    </thead>
+        </div>
 
-    <tbody>
-        <tr>
-            <td class="corLinha">Diurno</td>
-            <td>28</td>
-        </tr>
+    </div>
 
-        <tr>
-            <td class="corLinha">Vespertino</td>
-            <td>-</td>
-        </tr>
 
-        <tr>
-            <td class="corLinha">Noturno</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-    </table>
+    <!-- =========================================
+         CABEÇALHO / NAVBAR
+    ========================================== -->
 
-    <h2>Critérios de seleção</h2>
-    <p>Informações sobre o processo seletivo da FATEC/RL podem ser encontradas <a href="http://vestibular.fatec.sp.gov.br">neste link</a>.</p>
+    <header class="header">
 
-    <h2>Redes sociais</h2>
+        <div class="header-container">
 
-    <ul>
-        <li>Facebook (<a href="http://facebook.com/fatecrl">http://facebook.com/fatecrl</a>)</li>
-        <li>Instagram (<a href="https://www.instagram.com/fatecrl">http://www.instagram.com/fatecrl</a>)</li>
-        <li>LinkedIn (<a href="https://www.linkedin.com/school/fatecrl">http://www.linkedin.com/school/fatecrl</a>)</li>
-    </ul>
+            <!-- LOGO -->
+
+            <a href="#" class="logo">
+
+                <div class="logo-icon">
+                    <i class="bi bi-flower1"></i>
+                </div>
+
+                <div class="logo-text">
+
+                    <span class="logo-name">
+                        EcoModa Secreta
+                    </span>
+
+                    <span class="logo-subtitle">
+                        brechó com curadoria
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- MENU -->
+
+            <nav class="navigation">
+
+                <a href="#" class="active">
+                    Início
+                </a>
+
+                <a href="#garimpos">
+                    Garimpos
+                </a>
+
+                <a href="#eventos">
+                    Eventos
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#contato">
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <!-- AÇÕES -->
+
+            <div class="header-actions">
+
+                <!-- Busca -->
+
+                <div class="search">
+
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar no brechó..."
+                        aria-label="Buscar no brechó">
+
+                </div>
+
+
+                <!-- Instagram -->
+
+                <a href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+
+                <!-- WhatsApp -->
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+
+                <!-- Usuário -->
+
+                <a href="#" aria-label="Minha conta">
+                    <i class="bi bi-person"></i>
+                </a>
+
+
+                <!-- Sacola -->
+
+                <a href="#" class="bag" aria-label="Sacola">
+
+                    <i class="bi bi-bag"></i>
+
+                    <span class="bag-number">
+                        0
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <!-- IMAGEM -->
+
+            <div class="hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=85"
+                    alt="Roupas vintage organizadas em um brechó">
+
+            </div>
+
+
+            <!-- TEXTO -->
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    MODA COM HISTÓRIA
+                </span>
+
+                <h1>
+                    Garimpos que viram
+                    <br>
+                    novas histórias.
+                </h1>
+
+                <p>
+                    Peças únicas, curadoria especial e
+                    moda mais consciente para o mundo.
+                </p>
+
+                <a href="#garimpos" class="button button-primary">
+                    Ver garimpos
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- DECORAÇÃO -->
+
+            <div class="hero-decoration">
+
+                <i class="bi bi-flower1"></i>
+
+            </div>
+
+
+            <!-- CONTROLES DO SLIDER -->
+
+            <div class="hero-controls">
+
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+
+            <button class="hero-arrow hero-arrow-left">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <button class="hero-arrow hero-arrow-right">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
+        </section>
+
+
+        <!-- =========================================
+             CATEGORIAS
+        ========================================== -->
+
+        <section class="categories" id="garimpos">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            NAVEGUE POR
+                        </span>
+
+                        <h2>
+                            Categorias
+                        </h2>
+
+                    </div>
+
+                    <a href="#">
+                        Ver todas as categorias
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- CARDS -->
+
+                <div class="category-grid">
+
+
+                    <!-- GARIMPOS -->
+
+                    <a href="#" class="category-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=85"
+                            alt="Roupas disponíveis no brechó">
+
+                        <div class="card-overlay"></div>
+
+                        <div class="category-content">
+
+                            <i class="bi bi-person-standing"></i>
+
+                            <h3>
+                                Garimpos
+                            </h3>
+
+                            <p>
+                                Roupas, acessórios e muito mais
+                            </p>
+
+                        </div>
+
+                        <span class="category-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <!-- EVENTOS -->
+
+                    <a href="#" class="category-card" id="eventos">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=900&q=85"
+                            alt="Evento de moda">
+
+                        <div class="card-overlay"></div>
+
+                        <div class="category-content">
+
+                            <i class="bi bi-calendar-event"></i>
+
+                            <h3>
+                                Eventos
+                            </h3>
+
+                            <p>
+                                Feiras, bazares e novidades
+                            </p>
+
+                        </div>
+
+                        <span class="category-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <!-- SOBRE -->
+
+                    <a href="#" class="category-card" id="sobre">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=900&q=85"
+                            alt="Detalhes de roupas vintage">
+
+                        <div class="card-overlay"></div>
+
+                        <div class="category-content">
+
+                            <i class="bi bi-star"></i>
+
+                            <h3>
+                                Sobre nós
+                            </h3>
+
+                            <p>
+                                Nossa história e propósito
+                            </p>
+
+                        </div>
+
+                        <span class="category-arrow blue">
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <!-- CONTATO -->
+
+                    <a href="#" class="category-card" id="contato">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=85"
+                            alt="Livros e objetos vintage">
+
+                        <div class="card-overlay"></div>
+
+                        <div class="category-content">
+
+                            <i class="bi bi-chat"></i>
+
+                            <h3>
+                                Contato
+                            </h3>
+
+                            <p>
+                                Fale com a gente
+                            </p>
+
+                        </div>
+
+                        <span class="category-arrow beige">
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         RODAPÉ
+    ========================================== -->
+
+    <footer class="footer">
+
+
+        <!-- ÁREA PRINCIPAL -->
+
+        <div class="footer-main">
+
+            <div class="footer-container">
+
+
+                <!-- LOCALIZAÇÃO -->
+
+                <div class="footer-location">
+
+                    <div class="footer-icon">
+
+                        <i class="bi bi-geo-alt"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Localização
+                        </h4>
+
+                        <p>
+                            Marapé - Santos, SP
+                        </p>
+
+                        <a href="#">
+                            Ver no mapa
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-divider"></div>
+
+
+                <!-- REDES SOCIAIS -->
+
+                <div class="footer-social">
+
+                    <a href="#">
+
+                        <i class="bi bi-instagram"></i>
+
+                        <div>
+
+                            <strong>
+                                Instagram
+                            </strong>
+
+                            <span>
+                                Acompanhe nossas novidades
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <i class="bi bi-whatsapp"></i>
+
+                        <div>
+
+                            <strong>
+                                WhatsApp
+                            </strong>
+
+                            <span>
+                                Fale com a gente
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="footer-divider"></div>
+
+
+                <!-- FRASE -->
+
+                <div class="footer-message">
+
+                    <p>
+                        Moda consciente
+                        <br>
+                        também é estilo.
+                    </p>
+
+                    <span>
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="footer-divider"></div>
+
+
+                <!-- NEWSLETTER -->
+
+                <div class="newsletter">
+
+                    <h4>
+                        Receba novidades e garimpos exclusivos
+                    </h4>
+
+                    <form>
+
+                        <input
+                            type="email"
+                            placeholder="Seu e-mail"
+                            aria-label="Seu e-mail">
+
+                        <button type="submit">
+                            Cadastrar
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2024 EcoModa Secreta.
+                    Brechó com curadoria.
+                    Todos os direitos reservados.
+                </p>
+
+                <div>
+
+                    <a href="#">
+                        Termos de uso
+                    </a>
+
+                    <span>|</span>
+
+                    <a href="#">
+                        Política de privacidade
+                    </a>
+
+                    <span>
+                        ♡
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 
 </body>
+
 </html>
